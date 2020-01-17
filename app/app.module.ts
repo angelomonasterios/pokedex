@@ -13,13 +13,13 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 import { HttpClientModule } from '@angular/common/http';
-import { SearchPipe } from './pipes/search.pipe';
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    SearchPipe
+   
   ],
   imports: [
     BrowserModule,
