@@ -1,0 +1,40 @@
+
+  <div style="width: 600px;margin: 69px auto 0 auto; background: #4a93d2; padding: 30px;">
+
+  
+  <app-search (search)="handleSearch($event)" [(ngModel)]="nombrePokemon" name="fieldName" ngDefaultControl (keyup.enter)="cargaUsuario()"></app-search>
+  <table >
+    
+    <thead>
+      <th></th>
+      <th>name</th>
+      <th>Type</th>
+      <th>Total</th>
+      <th>HP</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>SP. Atk</th>
+      <th>SP. Defense</th>
+      <th>Speed</th>
+    </thead>
+    <tr >
+      <th style="width: 50px; "><img src="{{pokemons?.sprites.back_default}}"alt="" > </th>
+      <th>{{pokemons?.name}}</th>
+      <th >{{pokemons?.types[0].type.name}}</th>
+      <th >{{total}}</th>
+      <th>{{pokemons?.stats[5].base_stat}}</th>
+      <th>{{pokemons?.stats[4].base_stat}}</th>
+      <th>{{pokemons?.stats[3].base_stat}}</th>
+      <th>{{pokemons?.stats[2].base_stat}}</th>
+      <th>{{pokemons?.stats[1].base_stat}}</th>
+      <th>{{pokemons?.stats[0].base_stat}}</th>
+     
+      
+    </tr>
+   
+   
+  </table>
+</div>
+
+
+
